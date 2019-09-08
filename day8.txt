@@ -1,0 +1,204 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+========== RESTART: C:\Users\Pranav\Desktop\PYTHON\hwbrute_force.py ==========
+Enter the number of employees needed1
+Enter the employee id i 1
+Enter the employee name i aestg
+Enter the employee designations i ggg
+Enter the employee salary i 1234
+Enter the employee status i active
+Enter the number of years of work3
+Traceback (most recent call last):
+  File "C:\Users\Pranav\Desktop\PYTHON\hwbrute_force.py", line 30, in <module>
+    e1.hike(int(input("Enter the number of years of work")))
+  File "C:\Users\Pranav\Desktop\PYTHON\hwbrute_force.py", line 15, in hike
+    self.salary=self.salary+(years*annual_hike*self.salary)
+NameError: name 'annual_hike' is not defined
+>>> 
+========== RESTART: C:\Users\Pranav\Desktop\PYTHON\hwbrute_force.py ==========
+Enter the number of employees needed1
+Enter the employee id i 1
+Enter the employee name i sbfksrg
+Enter the employee designations i gtdhy
+Enter the employee salary i 1234
+Enter the employee status i active
+Enter the number of years of work3
+1604.2
+Traceback (most recent call last):
+  File "C:\Users\Pranav\Desktop\PYTHON\hwbrute_force.py", line 34, in <module>
+    e2.assign_id(input("Enter the employee id "))
+NameError: name 'e2' is not defined
+>>> 
+========== RESTART: C:\Users\Pranav\Desktop\PYTHON\hwbrute_force.py ==========
+Enter the number of employees needed1
+Enter the employee id i 1
+Enter the employee name i adsff
+Enter the employee designations i asdfgh
+Enter the employee salary i 1234
+Enter the employee status i active
+Enter the number of years of work3
+1604.2
+Traceback (most recent call last):
+  File "C:\Users\Pranav\Desktop\PYTHON\hwbrute_force.py", line 73, in <module>
+    print("Active count of employees are" + active_count)
+TypeError: can only concatenate str (not "int") to str
+>>> 
+========== RESTART: C:\Users\Pranav\Desktop\PYTHON\hwbrute_force.py ==========
+Enter the number of employees needed1
+Enter the employee id i 1
+Enter the employee name i Ayush
+Enter the employee designations i qwerty
+Enter the employee salary i 1234
+Enter the employee status i active
+Enter the number of years of work3
+1604.2
+Active count of employees are0
+>>> 
+========== RESTART: C:\Users\Pranav\Desktop\PYTHON\hwbrute_force.py ==========
+Enter the number of employees needed1
+Enter the employee id i 1
+Enter the employee name i Ayush
+Enter the employee designations i qwerty
+Enter the employee salary i 1234
+Enter the employee status i active
+Enter the number of years of work3
+1604.2
+Active count of employees are1
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py", line 14, in <module>
+    s1.push(5)
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py", line 3, in push
+    self.append(value)
+AttributeError: 'stack' object has no attribute 'append'
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py", line 16, in <module>
+    s1.push(5)
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py", line 5, in push
+    self.append(value)
+AttributeError: 'stack' object has no attribute 'append'
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py", line 16, in <module>
+    s1.push(5)
+TypeError: push() missing 1 required positional argument: 'li'
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py", line 16, in <module>
+    s1.push(5)
+TypeError: push() missing 1 required positional argument: 'li'
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py", line 16, in <module>
+    s1.push(5)
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py", line 5, in push
+    li.append(value)
+NameError: name 'li' is not defined
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py", line 18, in <module>
+    s1.display()
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py", line 10, in display
+    print(a[i])
+NameError: name 'a' is not defined
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+5
+3
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+5
+3
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py", line 19, in <module>
+    s1.pop()
+TypeError: pop() missing 1 required positional argument: 'li'
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+5
+3
+5
+5
+5
+9
+5
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+5
+3
+5
+11
+5
+9
+11
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+5
+3
+5
+11
+5
+9
+11
+3
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py", line 25, in <module>
+    print("Length of current stack is " + s1.length())
+TypeError: can only concatenate str (not "NoneType") to str
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+5
+3
+5
+11
+5
+9
+11
+3
+Length of current stack is None
+>>> 
+=========== RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopadv.py ===========
+5
+3
+5
+11
+5
+9
+11
+3
+>>> 
+========= RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopconcepts.py =========
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopconcepts.py", line 8, in <module>
+    print(c.x)
+NameError: name 'c' is not defined
+>>> 
+========= RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopconcepts.py =========
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day8oopconcepts.py", line 8, in <module>
+    print(c.x)
+NameError: name 'c' is not defined
+>>> 
+========= RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopconcepts.py =========
+1
+1
+>>> 
+========= RESTART: C:/Users/Pranav/Desktop/PYTHON/day8oopconcepts.py =========
+1
+1
+2
+1
+3
+3
+3
+>>> 

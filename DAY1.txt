@@ -1,0 +1,113 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> print('hello World')
+hello World
+>>> print('strings are to be enclosed in a quotation mark where as numbers can be aaded as it is')
+strings are to be enclosed in a quotation mark where as numbers can be aaded as it is
+>>> print(33%4)
+1
+>>> print('while division the numbers are converted to float and then they are divided')
+while division the numbers are converted to float and then they are divided
+>>> print('abc' + xyz)
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    print('abc' + xyz)
+NameError: name 'xyz' is not defined
+>>> print("anc" + "xyz")
+ancxyz
+>>> print("ancxyz"-"xyz")
+Traceback (most recent call last):
+   File "<pyshell#6>", line 1, in <module>
+    print("ancxyz"-"xyz")
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
+>>> print("String can only be concatenated , it csnnot be subtracted")
+String can only be concatenated , it csnnot be subtracted
+>>> print("VARIABLES")
+VARIABLES
+>>> x=10
+>>> print(x)
+10
+>>> y="hello world"
+>>> print(y)
+hello world
+>>> x=10
+>>> y=20
+>>> z=x+y
+>>> print(z)
+30
+>>> a,b=11,12
+>>> c=a+b
+>>> print(c)
+23
+>>> print('strings are to be enclosed in a quotation mark where as numbers can be added as it is')
+strings are to be enclosed in a quotation mark where as numbers can be added as it is
+>>> first_name ="Ayush"
+>>> last_name ="Shah"
+>>> print("My full name is : " +first_name + "  " + last_name)
+My full name is : Ayush  Shah
+>>> username = "AYush"
+>>> message = " I love Liverpool"
+>>> print(username + ' said, " ' + message + " !!!" )
+AYush said, "  I love Liverpool !!!
+>>> print(username + ' said, " ' + message + " "!!!" )
+      
+SyntaxError: invalid syntax
+>>> print(username + ' said, " ' + message + '" !!!' )
+AYush said, "  I love Liverpool" !!!
+>>> print("ESCAPE CHARACTER , in python the escape character is \")
+      
+SyntaxError: EOL while scanning string literal
+>>> print("abc'xy\'z")
+abc'xy'z
+>>> print("ESCAPE CHARACTER , in python the escape character is \"")
+ESCAPE CHARACTER , in python the escape character is "
+>>> print("ESCAPE CHARACTER , in python the escape character is '\'")
+ESCAPE CHARACTER , in python the escape character is ''
+>>> print('\")
+      
+SyntaxError: EOL while scanning string literal
+>>> print("Strings also have index numbers in python, thus the first letter will have an index of 0")
+Strings also have index numbers in python, thus the first letter will have an index of 0
+>>> a='programmming'
+>>> print(a,5)
+programmming 5
+>>> print(a[5])
+a
+>>> #index numbers of the number like as arrays
+>>> print(a[3]+a[4]+a[5]+a[6])
+gram
+>>> print(a[3:7})
+SyntaxError: invalid syntax
+>>> print(a[3:7])
+gram
+>>> # print(string_name([Start_index_number : Last_index_number])
+>>> #slicing of strings
+>>> print(a[0:3] + a[6:8])
+promm
+>>> #you can leave the first parameter empty if you want to print form the start to a certain limit
+>>> #you can leave the second part of the colon empty if you want to print from a certain number to a end of the string
+>>> full_name="Ayush Shah"
+>>> first_name = full_name[:6]
+>>> last name = full_name[8:]
+SyntaxError: invalid syntax
+>>> last_name = full_name[8:]
+>>> print(first_name)
+Ayush 
+>>> print(last_name)
+ah
+>>> last_name = full_name[6:]
+>>> print(last_name)
+Shah
+>>> x = 'python'
+>>> y = x[:1]
+>>> z = x[5:]
+>>> print(y+x[1:5]+z)
+python
+>>> print(z+x[1:5]+y)
+nythop
+>>> #WAPP for interchanging the first and last characters of a string
+>>> #python a strings are immutables , thus you can not change the first numbers from the programs
+>>> print(x[-1])
+n
+>>> #python has negative indexing as welll, thus the last letter of a string will have -1 index , -2 will be for the second last character
+>>> 

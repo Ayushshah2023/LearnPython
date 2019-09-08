@@ -1,0 +1,73 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day6.py", line 48, in <module>
+    print(add2([1,3,5,7,9],[2,4,6,8]))
+  File "C:/Users/Pranav/Desktop/PYTHON/day6.py", line 35, in add2
+    if(len[a]>=len(b)):
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 1, 3, 4, 3, 5, 6, 5, 7, 8, 7]
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 1, 3, 4, 3, 5, 6, 5, 7, 8, 7]
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 3, 4, 5, 6, 7, 8, 7]
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+It is a pangram
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+Not a pangram
+Not a pangram
+Not a pangram
+It is a pangram
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+It is a pangram
+Not a pangram
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+Not a pangram
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+It is a pangram
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+It is a pangram
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day6.py", line 74, in <module>
+    if(pana("The quick brown fox jumps over the lazy dog")==false):
+  File "C:/Users/Pranav/Desktop/PYTHON/day6.py", line 73, in pana
+    return true
+NameError: name 'true' is not defined
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day6.py ==============
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+It is a pangram
+>>> 

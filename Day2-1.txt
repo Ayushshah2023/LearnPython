@@ -1,0 +1,66 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> a = "Hello";
+>>> b = 1;
+>>> print(a + b)
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    print(a + b)
+TypeError: can only concatenate str (not "int") to str
+>>> print(a+'b');
+Hellob
+>>> print(a,b);
+Hello 1
+>>> #remember this is brute force
+>>> #better is to convert the int to string , and then concat it
+>>> b=str(b)
+>>> #this is one solution where you have to change the state of the int
+>>> print(a+b)
+Hello1
+>>> b=1;
+>>> print(a+str(b))
+Hello1
+>>> #this is the second method herein th eint remains an integer , conversion ain't necessary
+>>> #convert string to an integer , this will only convert if the string contains an integer
+>>> a='500'
+>>> print(int(a)+25)
+525
+>>> #Everthing done above is known as typecasting
+>>> #WAPP whare you add the first and last didgit of the integer
+>>> a=234567
+>>> b=a[0]
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    b=a[0]
+TypeError: 'int' object is not subscriptable
+>>> b=str(a)
+>>> c=b[0]
+>>> d=b[-1]
+>>> c=print(int(c))
+2
+>>> d=int(d)
+>>> print(c+d)
+Traceback (most recent call last):
+  File "<pyshell#25>", line 1, in <module>
+    print(c+d)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+>>> c=int(c)
+Traceback (most recent call last):
+  File "<pyshell#26>", line 1, in <module>
+    c=int(c)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+>>> print(c)
+None
+>>> q=2345
+>>> w=str(q)
+>>> e=w[:1]
+>>> r=w[-1];
+>>> print(e)
+2
+>>> print(r)
+5
+>>> e=int(e)
+>>> r=int(r)
+>>> print(e+r)
+7
+>>> 

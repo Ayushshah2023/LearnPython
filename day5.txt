@@ -1,0 +1,334 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+bca
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+bca
+25
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+bca
+25
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 23, in <module>
+    q=lena("liverpool")
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 21, in lena
+    count=count+1
+UnboundLocalError: local variable 'count' referenced before assignment
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+bca
+25
+9
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+bca
+25
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 23, in <module>
+    q=lena("liverpool")
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 20, in lena
+    if(s[i]!=0):
+IndexError: string index out of range
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+bca
+25
+9
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+bca
+25
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 23, in <module>
+    q=lena("liverpool")
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 20, in lena
+    if(s[i]!=ord( )):
+TypeError: ord() takes exactly one argument (0 given)
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+bca
+25
+9
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+bca
+25
+9
+5250
+<function conn1 at 0x036A60C0>
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+bca
+25
+9
+5250
+107.14285714285714
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+bca
+25
+5
+5250
+107.14285714285714
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+ENter the number 7
+0
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 38, in <module>
+    print(facto())
+TypeError: facto() missing 1 required positional argument: 'a'
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 38, in <module>
+    print(facto(a))
+NameError: name 'a' is not defined
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+ENter the number8
+0
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+0
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+1
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 43, in <module>
+    print(fra(5))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 39, in fra
+    pro=pro*b
+UnboundLocalError: local variable 'pro' referenced before assignment
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 43, in <module>
+    print(fra(5))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 39, in fra
+    pro=pro*b
+UnboundLocalError: local variable 'pro' referenced before assignment
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+1
+None
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 45, in <module>
+    print(fra(5))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 39, in fra
+    pro=pro*b
+UnboundLocalError: local variable 'pro' referenced before assignment
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 45, in <module>
+    print(fra(5))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 39, in fra
+    pro=pro*b
+UnboundLocalError: local variable 'pro' referenced before assignment
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 45, in <module>
+    print(fra(5))
+NameError: name 'fra' is not defined
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+120
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 58, in <module>
+    print(cot(['abc','xyz','abc']))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 56, in cot
+    lit[i] = len(li[i])
+IndexError: list assignment index out of range
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 58, in <module>
+    print(cot(['abc','xyz','abc']))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 56, in cot
+    lit[i] = len(li[i])
+IndexError: list assignment index out of range
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 58, in <module>
+    print(cot(['abc','xyz','abc']))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 56, in cot
+    lit[i] = len(li[i-1])
+IndexError: list assignment index out of range
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 58, in <module>
+    print(cot(['abc','xyz','abc']))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 56, in cot
+    lit[i] = len(li[i])
+IndexError: list assignment index out of range
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 58, in <module>
+    print(cot(['abc','xyz','abc']))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 56, in cot
+    lit.append= len(li[i])
+AttributeError: 'list' object attribute 'append' is read-only
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+[3, 3, 3]
+None
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+['abc', 'xyz', 'abc']
+None
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 73, in <module>
+    print(incr(111122233))
+NameError: name 'incr' is not defined
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 73, in <module>
+    print(inrc(111122233))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 69, in inrc
+    if(len(a)>=4):
+TypeError: object of type 'int' has no len()
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 73, in <module>
+    print(inrc('111122233'))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 70, in inrc
+    a.append(-4,",")
+AttributeError: 'str' object has no attribute 'append'
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 73, in <module>
+    print(inrc('111122233'))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 70, in inrc
+    a.add(-4,",")
+AttributeError: 'str' object has no attribute 'add'
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 74, in <module>
+    print(inrc([1,1,1,1,2,2,2,3,3]))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 70, in inrc
+    a.add(-4,",")
+AttributeError: 'list' object has no attribute 'add'
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 74, in <module>
+    print(inrc([1,1,1,1,2,2,2,3,3]))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 70, in inrc
+    a.append(-4,",")
+TypeError: append() takes exactly one argument (2 given)
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+[1, 1, 1, ',', 1, 2, ',', 2, 2, 3, 3]
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+[1, 1, 1, 1, ',', 2, ',', 2, ',', 2, 3, 3]
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+[1, 1, ',', 1, 1, ',', 2, 2, ',', 2, 3, 3]
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 77, in <module>
+    print(inrc([1,1,1,1,2,2,2,3,3]))
+  File "C:/Users/Pranav/Desktop/PYTHON/day5.py", line 69, in inrc
+    for i in range(1,(len(a)/3)):
+TypeError: 'float' object cannot be interpreted as an integer
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day5.py ==============
+7
+40320
+[1, 1, ',', 1, 1, ',', 2, 2, ',', 2, 3, 3]
+>>> 

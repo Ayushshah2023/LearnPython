@@ -1,0 +1,183 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> #thus we can convert the int to str , fetch the first and last digit , convert them to int and then add them
+>>> name = input("Enter your name");
+Enter your nameAyush
+>>> print(name)
+Ayush
+>>> ln =input("Enter your last lane")
+Enter your last laneSh11ah
+>>> print(ln)
+Sh11ah
+>>> name  = input("ENter you name")
+ENter you nameAyush
+>>> print("Welcome "+'"'+name+'"'+"!")
+Welcome "Ayush"!
+>>> i1=input(Enter integer 1)
+SyntaxError: invalid syntax
+>>> i1=input("Enter int 1")
+Enter int 1345
+>>> i2=input("Enter int 2")
+Enter int 2456
+>>> print(i1+i2)
+345456
+>>> i1=int(i1)
+>>> i2=int(i2)
+>>> print(i1+i2)
+801
+>>> #When an input is taken , it is set as a string by default , thus if you want to have an integer as an input then you have to convert it
+>>> #you can typecast the variable at the stage of input only, thus after wards you don't face an issue
+>>> i3=int(input("Enter third number")
+       567
+       
+SyntaxError: invalid syntax
+>>> i3=int(input("Enter third number"))
+Enter third number567
+>>> print(i1+i2+i3)
+1368
+>>> 
+>>> 
+>>> 
+>>> #data structures
+>>> #list,tuple,dictionary,set
+>>> li = [1,2,3,4,5]
+>>> print[li]
+Traceback (most recent call last):
+  File "<pyshell#26>", line 1, in <module>
+    print[li]
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> print(li)
+[1, 2, 3, 4, 5]
+>>> lis =["mane","firmino","salah"]
+>>> print(lis)
+['mane', 'firmino', 'salah']
+>>> lit=[10,"mane",9,"bobby",11,"mo"]
+>>> print(lit)
+[10, 'mane', 9, 'bobby', 11, 'mo']
+>>> liss =[1,2,3,[4,5,[6,7,8,9]],10,11,[12,13]]
+>>> print(len(liss))
+7
+>>> print(type(liss))
+<class 'list'>
+>>> print(len("Liv"))
+3
+>>> #lists are type of arrays but they are dynamic , and it can store any type of data in it, eg; an int and a string can be stored together in a list
+>>> #a list can contain multiple lists within them
+>>> print(lit[3])
+bobby
+>>> print(lit([3[2]]))
+Traceback (most recent call last):
+  File "<pyshell#41>", line 1, in <module>
+    print(lit([3[2]]))
+TypeError: 'int' object is not subscriptable
+>>> tem = lit[3]
+>>> print(temp[2])
+Traceback (most recent call last):
+  File "<pyshell#43>", line 1, in <module>
+    print(temp[2])
+NameError: name 'temp' is not defined
+>>> print(tem[2])
+b
+>>> print(lit[3][2])
+b
+>>> #printing a certain char of a member of the list
+>>> print(lis[3][1:5]+ lis[4])
+Traceback (most recent call last):
+  File "<pyshell#47>", line 1, in <module>
+    print(lis[3][1:5]+ lis[4])
+IndexError: list index out of range
+>>> print(lis[3][0:3]+lis[4])
+Traceback (most recent call last):
+  File "<pyshell#48>", line 1, in <module>
+    print(lis[3][0:3]+lis[4])
+IndexError: list index out of range
+>>> print(lit[3][0:3]+lit[4])
+Traceback (most recent call last):
+  File "<pyshell#49>", line 1, in <module>
+    print(lit[3][0:3]+lit[4])
+TypeError: can only concatenate str (not "int") to str
+>>> print(lit[3][0:3]+str(lit[4]))
+bob11
+>>> v=[1,2,3,["abc",'xyz'],12,15,16,[1,2,['zxy','python',[5]]],21]
+>>> print(v[7][2][1][1:5]+v[7][2][2])
+Traceback (most recent call last):
+  File "<pyshell#52>", line 1, in <module>
+    print(v[7][2][1][1:5]+v[7][2][2])
+TypeError: can only concatenate str (not "list") to str
+>>> print(v[7][2][1][1:5]+str(v[7][2][2]))
+ytho[5]
+>>> print(v[7][2][1][1:5]+str(v[7][2][2][0]))
+ytho5
+>>> #this is something to note
+>>> w =[1,2,3[4,5,6[7,8,9]]]
+Traceback (most recent call last):
+  File "<pyshell#56>", line 1, in <module>
+    w =[1,2,3[4,5,6[7,8,9]]]
+TypeError: 'int' object is not subscriptable
+>>> w =[1,2,3[4,5,6,[7,8,9]]]
+Traceback (most recent call last):
+  File "<pyshell#57>", line 1, in <module>
+    w =[1,2,3[4,5,6,[7,8,9]]]
+TypeError: 'int' object is not subscriptable
+>>> w =[1,2,3,[4,5,6,[7,8,9]]]
+>>> w=[[1,2,3],[4,5,6],[7,8,9]]
+>>> e=[[1,4,7],[2,5,8],[3,6,9]]
+>>> prit(w[1][2])
+Traceback (most recent call last):
+  File "<pyshell#61>", line 1, in <module>
+    prit(w[1][2])
+NameError: name 'prit' is not defined
+>>> print(w[1][2])
+6
+>>> qw =list(input("Enter the values of the matrix"))
+Enter the values of the matrix1,2,3,4,5,6,7,8,9
+>>> print(qw)
+['1', ',', '2', ',', '3', ',', '4', ',', '5', ',', '6', ',', '7', ',', '8', ',', '9']
+>>> qw =list(input("Enter the values of the matrix"))
+Enter the values of the matrix[1,2,3],[4,5,6],[7,8,9]
+>>> print(qw)
+['[', '1', ',', '2', ',', '3', ']', ',', '[', '4', ',', '5', ',', '6', ']', ',', '[', '7', ',', '8', ',', '9', ']']
+>>> #doubt 1: INPUT fro a matrix from user
+>>> #doubt 2: Add contents of a list to another list
+>>> li = [1,2,3]
+>>> li.append(44)
+>>> #append last me add karegaa
+>>> #use insert to add at any positio of the list
+>>> li.insert(1,"supp")
+>>> print(li)
+[1, 'supp', 2, 3, 44]
+>>> posi =int(input("Enter the position where you want to append"))
+Enter the position where you want to append2
+>>> element = input("ENter the element you want to add)
+		
+SyntaxError: EOL while scanning string literal
+>>> element = input("ENter the element you want to add")
+ENter the element you want to add6
+>>> li.insert(position,element)
+Traceback (most recent call last):
+  File "<pyshell#78>", line 1, in <module>
+    li.insert(position,element)
+NameError: name 'position' is not defined
+>>> li.insert(posi,element)
+>>> print(li)
+[1, 'supp', '6', 2, 3, 44]
+>>> ele=input("ENter the element you want to add")
+ENter the element you want to add455
+>>> li.insert(posi,int(element))
+>>> print(li)
+[1, 'supp', 6, '6', 2, 3, 44]
+>>> #replace ka function
+>>> li[2]="puthon"
+>>> print(li)
+[1, 'supp', 'puthon', '6', 2, 3, 44]
+>>> li[3] =int(66)
+>>> print(li)
+[1, 'supp', 'puthon', 66, 2, 3, 44]
+>>> #sab jaga string is the default way
+>>> #delete ka finction
+>>> del li[0]
+>>> print(li)
+['supp', 'puthon', 66, 2, 3, 44]
+>>> print(li[0])
+supp
+>>> 

@@ -1,0 +1,123 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> #return the month name when the month number is given by the buse
+>>> #TUPLE
+>>> #in tuple we can store diff elements in a tuple, by using parentheses
+>>> ti=(1,2,3,4,5)
+>>> print(type(ti))
+<class 'tuple'>
+>>> li =[1]
+>>> ti1 = (1)
+>>> print(type(li))
+<class 'list'>
+>>> print(type(ti1))
+<class 'int'>
+>>> #diff btwn list and tuple
+>>> # 1: [] vs ()
+>>> # 2: [1] vs (1,) cause for (1) the system will not take it as a tuple, instead it will store it in its data type
+>>> # 3: mutable vs immutable
+>>> ti.add(2)
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    ti.add(2)
+AttributeError: 'tuple' object has no attribute 'add'
+>>> ti.append(2,5)
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    ti.append(2,5)
+AttributeError: 'tuple' object has no attribute 'append'
+>>> print(ti(2))
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    print(ti(2))
+TypeError: 'tuple' object is not callable
+>>> ti(2)=" "
+SyntaxError: can't assign to function call
+>>> #if want to perform operations onto a tuple then we have to typecast it into a list
+>>> #tuple improves the readiblity of th ecode, and acts as a final variable in java or C++
+>>> a ="ayush"
+>>> #to check mutablity , you can see if the data type can append,delete , change data
+>>> #DICTIONARY
+>>> # it always has a mapping between key and the value pair , vey similar to array in java
+>>> #keys can also be strings
+>>> 
+>>> di ={1:monday.2:tuesday,3:wednesday}
+SyntaxError: invalid syntax
+>>> di={1:monday ,2:tuesday, 3:wednesday}
+Traceback (most recent call last):
+  File "<pyshell#26>", line 1, in <module>
+    di={1:monday ,2:tuesday, 3:wednesday}
+NameError: name 'monday' is not defined
+>>> di={1:'monday'}
+>>> di1={'monday':1}
+>>> #QQQQ how to accept values for all data structures
+>>> print(di[1])
+monday
+>>> #dictionary[key] => value
+>>> print(di1['monday'])
+1
+>>> dim ={1:'january',2:'february',3:'march',4:'april',5:'may',6:'june',7:'july',8:'august',9:'september',10:'october',11:'november',12:'december'}
+>>> mo =int(input("Enter the number of the month"))
+Enter the number of the month7
+>>> print(di[mo])
+Traceback (most recent call last):
+  File "<pyshell#35>", line 1, in <module>
+    print(di[mo])
+KeyError: 7
+>>> print(dim[mo])
+july
+>>> dit={1:di2={m=10,p=20,c=30,e=40,b=50},2:di3={m=11,p=21,c=31,e=41,b=51},3:di4={m=12,p=22,c=32,e=42,b=52},4:di5={m=13,p=23,c=33,e=43,b=53},5:di6={m=14,p=24,c=34,e=44,b=54}}
+SyntaxError: invalid syntax
+>>> dit={1:di2,2:di3,3:di4,4:di5,5:di6}
+Traceback (most recent call last):
+  File "<pyshell#38>", line 1, in <module>
+    dit={1:di2,2:di3,3:di4,4:di5,5:di6}
+NameError: name 'di2' is not defined
+>>> di2={m=10,p=20,c=30,e=40,b=50}
+SyntaxError: invalid syntax
+>>>  dit={1:di2={m:10,p:20,c:30,e:40,b:50},2:di3={m:11,p:21,c:31,e:41,b:51},3:di4={m:12,p:22,c:32,e:42,b:52},4:di5={m:13,p:23,c:33,e:43,b:53},5:di6={m:14,p:24,c:34,e:44,b:54}}
+ 
+SyntaxError: unexpected indent
+>>> dit={1:di2={m:10,p:20,c:30,e:40,b:50},2:di3={m:11,p:21,c:31,e:41,b:51},3:di4={m:12,p:22,c:32,e:42,b:52},4:di5={m:13,p:23,c:33,e:43,b:53},5:di6={m:14,p:24,c:34,e:44,b:54}}
+
+ 
+SyntaxError: invalid syntax
+>>> dit={1:[10,20,30,40,50],2:[11,21,31,41,51],3:[12,22,32,42,52],4:[13,23,33,43,53],5:[14,24,34,44,54]}
+>>> print(dit[1][2])
+30
+>>> print("First the marks for Maths,then chem,phy,english and finally biology" )
+First the marks for Maths,then chem,phy,english and finally biology
+>>> dit={1:[10,20,30,40,50],2:[11,21,31,41,51],3:[12,22,32,42,52],4:[13,23,33,43,53],5:[14,24,34,44,54]}
+>>> print(dit[1][2])
+SyntaxError: multiple statements found while compiling a single statement
+>>> dit={1:[10,20,30,40,50],2:[11,21,31,41,51],3:[12,22,32,42,52],4:[13,23,33,43,53],5:[14,24,34,44,54]}
+>>> print("First the marks for Maths,then chem,phy,english and finally biology" )
+First the marks for Maths,then chem,phy,english and finally biology
+>>> print(dit[2][3])
+41
+>>> d ={1:d1={"maths":10,"physics":20,"chem":30,"english":40,"biology":50}}
+SyntaxError: invalid syntax
+>>> #mmy ans me add student_mapper dictionary to add student_mapper={"maths":0,"physics":1}
+>>> #and then print(dit[1][student_mapper['physics']])
+>>> #SECOND APPROACH
+>>> # students ={ 1:{'maths':80,'phy':'33'}}
+>>> #matlab internal dictionary created shouldn't have a variable name
+>>> #THRID APPROACH
+>>> # students ={maths:{1:78,2:34,3:99}}
+>>> #this is the best apporach when the number of students are large
+>>> dit={1:{m:10,p:20,c:30,e:40,b:50},2:{m:11,p:21,c:31,e:41,b:51},3:{m:12,p:22,c:32,e:42,b:52},4:{m:13,p:23,c:33,e:43,b:53},5:{m:14,p:24,c:34,e:44,b:54}}
+Traceback (most recent call last):
+  File "<pyshell#58>", line 1, in <module>
+    dit={1:{m:10,p:20,c:30,e:40,b:50},2:{m:11,p:21,c:31,e:41,b:51},3:{m:12,p:22,c:32,e:42,b:52},4:{m:13,p:23,c:33,e:43,b:53},5:{m:14,p:24,c:34,e:44,b:54}}
+NameError: name 'm' is not defined
+>>> dit={1:{'m':10,'p':20,'c':30,'e':40,'b':50},2:{'m':11,'p':21,'c':31,'e':41,'b':51},3:{'m':12,'p':22,'c':32,'e':42,'b':52},4:{'m':13,'p':23,'c':33,'e':43,'b':53},5:{'m':14,'p':24,'c':34,'e':44,'b':54}}
+>>> total=int(dit[1]['p'])+int(dit[2]['p'])+int(dit[3]['p'])+int(dit[4]['p'])+int(dit[5]['p'])
+>>> print(total)
+110
+>>> di={'one':10,'two':20}
+>>> di['three']=30
+>>> di['one']=100
+>>> #keys are always unique in adictionary thus we can append and update with the above function
+>>> del di['two']
+>>> #the dictionary elements do not have a specific order
+>>> 

@@ -1,0 +1,425 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 13, in <module>
+    WeatherFore(Mumbai)
+NameError: name 'Mumbai' is not defined
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 14, in <module>
+    WeatherFore(Mumbai)
+NameError: name 'Mumbai' is not defined
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+https://api.weatherbit.io/v2.0/current?city=loc,NC&key=Key
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+https://api.weatherbit.io/v2.0/current?city=loc,&key=Key
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+https://api.weatherbit.io/v2.0/current?city=Mumbai&key=95dace7de296455999e47ce82e8cda2e
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+https://api.weatherbit.io/v2.0/current?city=Mumbai&key=95dace7de296455999e47ce82e8cda2e
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 17, in <module>
+    WeatherFore("Mumbai")
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 15, in WeatherFore
+    response=response.get(url)#sending a get response to the url
+UnboundLocalError: local variable 'response' referenced before assignment
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+https://api.weatherbit.io/v2.0/current?city=Mumbai&key=95dace7de296455999e47ce82e8cda2e
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 17, in <module>
+    WeatherFore("Mumbai")
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 15, in WeatherFore
+    response=response.get(fop)#sending a get response to the url
+UnboundLocalError: local variable 'response' referenced before assignment
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+https://api.weatherbit.io/v2.0/current?city=Mumbai&key=95dace7de296455999e47ce82e8cda2e
+Traceback (most recent call last):
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 316, in connect
+    conn = self._new_conn()
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x04278450>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.weatherbit.io', port=443): Max retries exceeded with url: /v2.0/current?city=Mumbai&key=95dace7de296455999e47ce82e8cda2e (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x04278450>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 17, in <module>
+    WeatherFore("Mumbai")
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 15, in WeatherFore
+    response=requests.get(fop)#sending a get response to the url
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.weatherbit.io', port=443): Max retries exceeded with url: /v2.0/current?city=Mumbai&key=95dace7de296455999e47ce82e8cda2e (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x04278450>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+https://api.weatherbit.io/v2.0/current?city=Mumbai&key=95dace7de296455999e47ce82e8cda2e
+<Response [200]> {"data":[{"rh":94,"pod":"d","lon":72.88261,"pres":1000.1,"timezone":"Asia\/Kolkata","ob_time":"2019-09-07 10:30","country_code":"IN","clouds":99,"ts":1567852200,"solar_rad":65.2,"state_code":"16","city_name":"Mumbai","wind_spd":4.1,"last_ob_time":"2019-09-07T10:30:00","wind_cdir_full":"west-southwest","wind_cdir":"WSW","slp":1001,"vis":5,"h_angle":38.6,"sunset":"13:18","dni":783.17,"dewpt":25,"snow":0,"uv":1.80464,"precip":0,"wind_dir":250,"sunrise":"00:54","ghi":500.28,"dhi":94.95,"aqi":136,"lat":19.07283,"weather":{"icon":"c04d","code":"804","description":"Overcast clouds"},"datetime":"2019-09-07:10","temp":26,"station":"VABB","elev_angle":31.71,"app_temp":28.2}],"count":1}
+ <class 'str'>
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+https://api.weatherbit.io/v2.0/current?city=Mumbai&key=95dace7de296455999e47ce82e8cda2e
+<Response [200]> {"data":[{"rh":94,"pod":"d","lon":72.88261,"pres":1000.1,"timezone":"Asia\/Kolkata","ob_time":"2019-09-07 10:30","country_code":"IN","clouds":99,"ts":1567852200,"solar_rad":65.2,"state_code":"16","city_name":"Mumbai","wind_spd":4.1,"last_ob_time":"2019-09-07T10:30:00","wind_cdir_full":"west-southwest","wind_cdir":"WSW","slp":1001,"vis":5,"h_angle":38.6,"sunset":"13:18","dni":783.17,"dewpt":25,"snow":0,"uv":1.80464,"precip":0,"wind_dir":250,"sunrise":"00:54","ghi":500.28,"dhi":94.95,"aqi":136,"lat":19.07283,"weather":{"icon":"c04d","code":"804","description":"Overcast clouds"},"datetime":"2019-09-07:10","temp":26,"station":"VABB","elev_angle":31.71,"app_temp":28.2}],"count":1}
+ <class 'str'>
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+https://api.weatherbit.io/v2.0/current?city=Mumbai&key=95dace7de296455999e47ce82e8cda2e
+<Response [200]> {"data":[{"rh":94,"pod":"d","lon":72.88261,"pres":1000.1,"timezone":"Asia\/Kolkata","ob_time":"2019-09-07 10:30","country_code":"IN","clouds":99,"ts":1567852200,"solar_rad":65.2,"state_code":"16","city_name":"Mumbai","wind_spd":4.1,"last_ob_time":"2019-09-07T10:30:00","wind_cdir_full":"west-southwest","wind_cdir":"WSW","slp":1001,"vis":5,"h_angle":38.6,"sunset":"13:18","dni":783.17,"dewpt":25,"snow":0,"uv":1.80464,"precip":0,"wind_dir":250,"sunrise":"00:54","ghi":500.28,"dhi":94.95,"aqi":136,"lat":19.07283,"weather":{"icon":"c04d","code":"804","description":"Overcast clouds"},"datetime":"2019-09-07:10","temp":26,"station":"VABB","elev_angle":31.71,"app_temp":28.2}],"count":1}
+ <class 'str'>
+{'data': [{'rh': 94, 'pod': 'd', 'lon': 72.88261, 'pres': 1000.1, 'timezone': 'Asia/Kolkata', 'ob_time': '2019-09-07 10:30', 'country_code': 'IN', 'clouds': 99, 'ts': 1567852200, 'solar_rad': 65.2, 'state_code': '16', 'city_name': 'Mumbai', 'wind_spd': 4.1, 'last_ob_time': '2019-09-07T10:30:00', 'wind_cdir_full': 'west-southwest', 'wind_cdir': 'WSW', 'slp': 1001, 'vis': 5, 'h_angle': 38.6, 'sunset': '13:18', 'dni': 783.17, 'dewpt': 25, 'snow': 0, 'uv': 1.80464, 'precip': 0, 'wind_dir': 250, 'sunrise': '00:54', 'ghi': 500.28, 'dhi': 94.95, 'aqi': 136, 'lat': 19.07283, 'weather': {'icon': 'c04d', 'code': '804', 'description': 'Overcast clouds'}, 'datetime': '2019-09-07:10', 'temp': 26, 'station': 'VABB', 'elev_angle': 31.71, 'app_temp': 28.2}], 'count': 1} <class 'dict'>
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+https://api.weatherbit.io/v2.0/current?city=Mumbai&key=95dace7de296455999e47ce82e8cda2e
+<Response [200]> {"data":[{"rh":94,"pod":"d","lon":72.88261,"pres":1000.1,"timezone":"Asia\/Kolkata","ob_time":"2019-09-07 10:30","country_code":"IN","clouds":99,"ts":1567852200,"solar_rad":65.2,"state_code":"16","city_name":"Mumbai","wind_spd":4.1,"last_ob_time":"2019-09-07T10:30:00","wind_cdir_full":"west-southwest","wind_cdir":"WSW","slp":1001,"vis":5,"h_angle":38.6,"sunset":"13:18","dni":783.17,"dewpt":25,"snow":0,"uv":1.80464,"precip":0,"wind_dir":250,"sunrise":"00:54","ghi":500.28,"dhi":94.95,"aqi":136,"lat":19.07283,"weather":{"icon":"c04d","code":"804","description":"Overcast clouds"},"datetime":"2019-09-07:10","temp":26,"station":"VABB","elev_angle":31.71,"app_temp":28.2}],"count":1}
+ <class 'str'>
+{'data': [{'rh': 94, 'pod': 'd', 'lon': 72.88261, 'pres': 1000.1, 'timezone': 'Asia/Kolkata', 'ob_time': '2019-09-07 10:30', 'country_code': 'IN', 'clouds': 99, 'ts': 1567852200, 'solar_rad': 65.2, 'state_code': '16', 'city_name': 'Mumbai', 'wind_spd': 4.1, 'last_ob_time': '2019-09-07T10:30:00', 'wind_cdir_full': 'west-southwest', 'wind_cdir': 'WSW', 'slp': 1001, 'vis': 5, 'h_angle': 38.6, 'sunset': '13:18', 'dni': 783.17, 'dewpt': 25, 'snow': 0, 'uv': 1.80464, 'precip': 0, 'wind_dir': 250, 'sunrise': '00:54', 'ghi': 500.28, 'dhi': 94.95, 'aqi': 136, 'lat': 19.07283, 'weather': {'icon': 'c04d', 'code': '804', 'description': 'Overcast clouds'}, 'datetime': '2019-09-07:10', 'temp': 26, 'station': 'VABB', 'elev_angle': 31.71, 'app_temp': 28.2}], 'count': 1} <class 'dict'>
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 25, in <module>
+    WeatherFore("Mumbai")
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 22, in WeatherFore
+    current_feel_temp=response['data'][0]["app_temp"]
+TypeError: 'Response' object is not subscriptable
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+https://api.weatherbit.io/v2.0/current?city=Mumbai&key=95dace7de296455999e47ce82e8cda2e
+<Response [200]> {"data":[{"rh":94,"pod":"d","lon":72.88261,"pres":1000.1,"timezone":"Asia\/Kolkata","ob_time":"2019-09-07 10:30","country_code":"IN","clouds":99,"ts":1567852200,"solar_rad":65.2,"state_code":"16","city_name":"Mumbai","wind_spd":4.1,"last_ob_time":"2019-09-07T10:30:00","wind_cdir_full":"west-southwest","wind_cdir":"WSW","slp":1001,"vis":5,"h_angle":38.6,"sunset":"13:18","dni":783.17,"dewpt":25,"snow":0,"uv":1.80464,"precip":0,"wind_dir":250,"sunrise":"00:54","ghi":500.28,"dhi":94.95,"aqi":136,"lat":19.07283,"weather":{"icon":"c04d","code":"804","description":"Overcast clouds"},"datetime":"2019-09-07:10","temp":26,"station":"VABB","elev_angle":31.71,"app_temp":28.2}],"count":1}
+ <class 'str'>
+{'data': [{'rh': 94, 'pod': 'd', 'lon': 72.88261, 'pres': 1000.1, 'timezone': 'Asia/Kolkata', 'ob_time': '2019-09-07 10:30', 'country_code': 'IN', 'clouds': 99, 'ts': 1567852200, 'solar_rad': 65.2, 'state_code': '16', 'city_name': 'Mumbai', 'wind_spd': 4.1, 'last_ob_time': '2019-09-07T10:30:00', 'wind_cdir_full': 'west-southwest', 'wind_cdir': 'WSW', 'slp': 1001, 'vis': 5, 'h_angle': 38.6, 'sunset': '13:18', 'dni': 783.17, 'dewpt': 25, 'snow': 0, 'uv': 1.80464, 'precip': 0, 'wind_dir': 250, 'sunrise': '00:54', 'ghi': 500.28, 'dhi': 94.95, 'aqi': 136, 'lat': 19.07283, 'weather': {'icon': 'c04d', 'code': '804', 'description': 'Overcast clouds'}, 'datetime': '2019-09-07:10', 'temp': 26, 'station': 'VABB', 'elev_angle': 31.71, 'app_temp': 28.2}], 'count': 1} <class 'dict'>
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 25, in <module>
+    WeatherFore("Mumbai")
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 23, in WeatherFore
+    print("Current temperature"+current_temp)
+TypeError: can only concatenate str (not "int") to str
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+Enter the city "Dubai"https://api.weatherbit.io/v2.0/current?city=Mumbai&key=95dace7de296455999e47ce82e8cda2e
+https://api.weatherbit.io/v2.0/current?city="Dubai"https://api.weatherbit.io/v2.0/current?city=Mumbai&key=95dace7de296455999e47ce82e8cda2e&key=95dace7de296455999e47ce82e8cda2e
+<Response [204]>  <class 'str'>
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 25, in <module>
+    WeatherFore(input("Enter the city "))
+  File "C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py", line 19, in WeatherFore
+    j_response=json.loads(response.text)
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+>>> 
+======== RESTART: C:/Users/Pranav/Desktop/PYTHON/day10(Google API).py ========
+Enter the city "Dubai"
+https://api.weatherbit.io/v2.0/current?city="Dubai"&key=95dace7de296455999e47ce82e8cda2e
+<Response [200]> {"data":[{"rh":34,"pod":"d","lon":55.17128,"pres":992.902,"timezone":"Asia\/Dubai","ob_time":"2019-09-07 11:44","country_code":"AE","clouds":64,"ts":1567856662,"solar_rad":442.391,"state_code":"03","city_name":"Dubai","wind_spd":5.83115,"last_ob_time":"2019-09-07T10:00:00","wind_cdir_full":"northwest","wind_cdir":"NW","slp":996.156,"vis":24.1347,"h_angle":30,"sunset":"14:32","dni":796.4,"dewpt":20.3,"snow":0,"uv":2.23606,"precip":0,"wind_dir":316,"sunrise":"02:02","ghi":529.47,"dhi":97.09,"aqi":153,"lat":25.0657,"weather":{"icon":"c02d","code":"802","description":"Scattered clouds"},"datetime":"2019-09-07:11","temp":39.1,"station":"OMDW","elev_angle":46.61,"app_temp":43}],"count":1}
+ <class 'str'>
+{'data': [{'rh': 34, 'pod': 'd', 'lon': 55.17128, 'pres': 992.902, 'timezone': 'Asia/Dubai', 'ob_time': '2019-09-07 11:44', 'country_code': 'AE', 'clouds': 64, 'ts': 1567856662, 'solar_rad': 442.391, 'state_code': '03', 'city_name': 'Dubai', 'wind_spd': 5.83115, 'last_ob_time': '2019-09-07T10:00:00', 'wind_cdir_full': 'northwest', 'wind_cdir': 'NW', 'slp': 996.156, 'vis': 24.1347, 'h_angle': 30, 'sunset': '14:32', 'dni': 796.4, 'dewpt': 20.3, 'snow': 0, 'uv': 2.23606, 'precip': 0, 'wind_dir': 316, 'sunrise': '02:02', 'ghi': 529.47, 'dhi': 97.09, 'aqi': 153, 'lat': 25.0657, 'weather': {'icon': 'c02d', 'code': '802', 'description': 'Scattered clouds'}, 'datetime': '2019-09-07:11', 'temp': 39.1, 'station': 'OMDW', 'elev_angle': 46.61, 'app_temp': 43}], 'count': 1} <class 'dict'>
+Current temperature39.1
+Current feel-like temperature43
+>>> 
+========== RESTART: C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py ==========
+>>> 
+========== RESTART: C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py ==========
+Enter the Currency CodeUSD
+Enter the value500
+ https://blockchain.info/tobtc?currency =USD&value=500
+<Response [500]> Parameter <currency> is missing <class 'str'>
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py", line 11, in <module>
+    BitCoin_price(input("Enter the Currency Code"),input("Enter the value"))
+  File "C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py", line 9, in BitCoin_price
+    j_response=json.loads(response.text)
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Pranav\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+>>> 
+========== RESTART: C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py ==========
+Enter the Currency CodeUSD
+Enter the value500
+ https://blockchain.info/ticker?currency =USD&value=500
+<Response [200]> {
+  "USD" : {"15m" : 10424.75, "last" : 10424.75, "buy" : 10424.75, "sell" : 10424.75, "symbol" : "$"},
+  "AUD" : {"15m" : 15223.05, "last" : 15223.05, "buy" : 15223.05, "sell" : 15223.05, "symbol" : "$"},
+  "BRL" : {"15m" : 42344.29, "last" : 42344.29, "buy" : 42344.29, "sell" : 42344.29, "symbol" : "R$"},
+  "CAD" : {"15m" : 13730.96, "last" : 13730.96, "buy" : 13730.96, "sell" : 13730.96, "symbol" : "$"},
+  "CHF" : {"15m" : 10294.96, "last" : 10294.96, "buy" : 10294.96, "sell" : 10294.96, "symbol" : "CHF"},
+  "CLP" : {"15m" : 7419223.96, "last" : 7419223.96, "buy" : 7419223.96, "sell" : 7419223.96, "symbol" : "$"},
+  "CNY" : {"15m" : 74179.4, "last" : 74179.4, "buy" : 74179.4, "sell" : 74179.4, "symbol" : "¥"},
+  "DKK" : {"15m" : 70546.37, "last" : 70546.37, "buy" : 70546.37, "sell" : 70546.37, "symbol" : "kr"},
+  "EUR" : {"15m" : 9449.88, "last" : 9449.88, "buy" : 9449.88, "sell" : 9449.88, "symbol" : "€"},
+  "GBP" : {"15m" : 8486.06, "last" : 8486.06, "buy" : 8486.06, "sell" : 8486.06, "symbol" : "£"},
+  "HKD" : {"15m" : 81728.48, "last" : 81728.48, "buy" : 81728.48, "sell" : 81728.48, "symbol" : "$"},
+  "INR" : {"15m" : 747235.71, "last" : 747235.71, "buy" : 747235.71, "sell" : 747235.71, "symbol" : "₹"},
+  "ISK" : {"15m" : 1316748.12, "last" : 1316748.12, "buy" : 1316748.12, "sell" : 1316748.12, "symbol" : "kr"},
+  "JPY" : {"15m" : 1114551.21, "last" : 1114551.21, "buy" : 1114551.21, "sell" : 1114551.21, "symbol" : "¥"},
+  "KRW" : {"15m" : 1.243438205E7, "last" : 1.243438205E7, "buy" : 1.243438205E7, "sell" : 1.243438205E7, "symbol" : "₩"},
+  "NZD" : {"15m" : 16221.95, "last" : 16221.95, "buy" : 16221.95, "sell" : 16221.95, "symbol" : "$"},
+  "PLN" : {"15m" : 41004.19, "last" : 41004.19, "buy" : 41004.19, "sell" : 41004.19, "symbol" : "zł"},
+  "RUB" : {"15m" : 685818.29, "last" : 685818.29, "buy" : 685818.29, "sell" : 685818.29, "symbol" : "RUB"},
+  "SEK" : {"15m" : 100568.61, "last" : 100568.61, "buy" : 100568.61, "sell" : 100568.61, "symbol" : "kr"},
+  "SGD" : {"15m" : 14401.79, "last" : 14401.79, "buy" : 14401.79, "sell" : 14401.79, "symbol" : "$"},
+  "THB" : {"15m" : 316839.45, "last" : 316839.45, "buy" : 316839.45, "sell" : 316839.45, "symbol" : "฿"},
+  "TWD" : {"15m" : 325197.82, "last" : 325197.82, "buy" : 325197.82, "sell" : 325197.82, "symbol" : "NT$"}
+} <class 'str'>
+{'USD': {'15m': 10424.75, 'last': 10424.75, 'buy': 10424.75, 'sell': 10424.75, 'symbol': '$'}, 'AUD': {'15m': 15223.05, 'last': 15223.05, 'buy': 15223.05, 'sell': 15223.05, 'symbol': '$'}, 'BRL': {'15m': 42344.29, 'last': 42344.29, 'buy': 42344.29, 'sell': 42344.29, 'symbol': 'R$'}, 'CAD': {'15m': 13730.96, 'last': 13730.96, 'buy': 13730.96, 'sell': 13730.96, 'symbol': '$'}, 'CHF': {'15m': 10294.96, 'last': 10294.96, 'buy': 10294.96, 'sell': 10294.96, 'symbol': 'CHF'}, 'CLP': {'15m': 7419223.96, 'last': 7419223.96, 'buy': 7419223.96, 'sell': 7419223.96, 'symbol': '$'}, 'CNY': {'15m': 74179.4, 'last': 74179.4, 'buy': 74179.4, 'sell': 74179.4, 'symbol': '¥'}, 'DKK': {'15m': 70546.37, 'last': 70546.37, 'buy': 70546.37, 'sell': 70546.37, 'symbol': 'kr'}, 'EUR': {'15m': 9449.88, 'last': 9449.88, 'buy': 9449.88, 'sell': 9449.88, 'symbol': '€'}, 'GBP': {'15m': 8486.06, 'last': 8486.06, 'buy': 8486.06, 'sell': 8486.06, 'symbol': '£'}, 'HKD': {'15m': 81728.48, 'last': 81728.48, 'buy': 81728.48, 'sell': 81728.48, 'symbol': '$'}, 'INR': {'15m': 747235.71, 'last': 747235.71, 'buy': 747235.71, 'sell': 747235.71, 'symbol': '₹'}, 'ISK': {'15m': 1316748.12, 'last': 1316748.12, 'buy': 1316748.12, 'sell': 1316748.12, 'symbol': 'kr'}, 'JPY': {'15m': 1114551.21, 'last': 1114551.21, 'buy': 1114551.21, 'sell': 1114551.21, 'symbol': '¥'}, 'KRW': {'15m': 12434382.05, 'last': 12434382.05, 'buy': 12434382.05, 'sell': 12434382.05, 'symbol': '₩'}, 'NZD': {'15m': 16221.95, 'last': 16221.95, 'buy': 16221.95, 'sell': 16221.95, 'symbol': '$'}, 'PLN': {'15m': 41004.19, 'last': 41004.19, 'buy': 41004.19, 'sell': 41004.19, 'symbol': 'zł'}, 'RUB': {'15m': 685818.29, 'last': 685818.29, 'buy': 685818.29, 'sell': 685818.29, 'symbol': 'RUB'}, 'SEK': {'15m': 100568.61, 'last': 100568.61, 'buy': 100568.61, 'sell': 100568.61, 'symbol': 'kr'}, 'SGD': {'15m': 14401.79, 'last': 14401.79, 'buy': 14401.79, 'sell': 14401.79, 'symbol': '$'}, 'THB': {'15m': 316839.45, 'last': 316839.45, 'buy': 316839.45, 'sell': 316839.45, 'symbol': '฿'}, 'TWD': {'15m': 325197.82, 'last': 325197.82, 'buy': 325197.82, 'sell': 325197.82, 'symbol': 'NT$'}} <class 'dict'>
+>>> 
+========== RESTART: C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py ==========
+Enter the Currency CodeUSD
+Enter the value500
+ https://blockchain.info/ticker?currency =USD&value=500
+<Response [200]> {
+  "USD" : {"15m" : 10417.1, "last" : 10417.1, "buy" : 10417.1, "sell" : 10417.1, "symbol" : "$"},
+  "AUD" : {"15m" : 15211.88, "last" : 15211.88, "buy" : 15211.88, "sell" : 15211.88, "symbol" : "$"},
+  "BRL" : {"15m" : 42313.22, "last" : 42313.22, "buy" : 42313.22, "sell" : 42313.22, "symbol" : "R$"},
+  "CAD" : {"15m" : 13720.88, "last" : 13720.88, "buy" : 13720.88, "sell" : 13720.88, "symbol" : "$"},
+  "CHF" : {"15m" : 10287.41, "last" : 10287.41, "buy" : 10287.41, "sell" : 10287.41, "symbol" : "CHF"},
+  "CLP" : {"15m" : 7413778.9, "last" : 7413778.9, "buy" : 7413778.9, "sell" : 7413778.9, "symbol" : "$"},
+  "CNY" : {"15m" : 74124.96, "last" : 74124.96, "buy" : 74124.96, "sell" : 74124.96, "symbol" : "¥"},
+  "DKK" : {"15m" : 70494.6, "last" : 70494.6, "buy" : 70494.6, "sell" : 70494.6, "symbol" : "kr"},
+  "EUR" : {"15m" : 9442.71, "last" : 9442.71, "buy" : 9442.71, "sell" : 9442.71, "symbol" : "€"},
+  "GBP" : {"15m" : 8479.83, "last" : 8479.83, "buy" : 8479.83, "sell" : 8479.83, "symbol" : "£"},
+  "HKD" : {"15m" : 81668.5, "last" : 81668.5, "buy" : 81668.5, "sell" : 81668.5, "symbol" : "$"},
+  "INR" : {"15m" : 746687.3, "last" : 746687.3, "buy" : 746687.3, "sell" : 746687.3, "symbol" : "₹"},
+  "ISK" : {"15m" : 1315781.74, "last" : 1315781.74, "buy" : 1315781.74, "sell" : 1315781.74, "symbol" : "kr"},
+  "JPY" : {"15m" : 1113722.88, "last" : 1113722.88, "buy" : 1113722.88, "sell" : 1113722.88, "symbol" : "¥"},
+  "KRW" : {"15m" : 1.242525632E7, "last" : 1.242525632E7, "buy" : 1.242525632E7, "sell" : 1.242525632E7, "symbol" : "₩"},
+  "NZD" : {"15m" : 16210.05, "last" : 16210.05, "buy" : 16210.05, "sell" : 16210.05, "symbol" : "$"},
+  "PLN" : {"15m" : 40974.1, "last" : 40974.1, "buy" : 40974.1, "sell" : 40974.1, "symbol" : "zł"},
+  "RUB" : {"15m" : 685314.96, "last" : 685314.96, "buy" : 685314.96, "sell" : 685314.96, "symbol" : "RUB"},
+  "SEK" : {"15m" : 100494.8, "last" : 100494.8, "buy" : 100494.8, "sell" : 100494.8, "symbol" : "kr"},
+  "SGD" : {"15m" : 14391.22, "last" : 14391.22, "buy" : 14391.22, "sell" : 14391.22, "symbol" : "$"},
+  "THB" : {"15m" : 316606.92, "last" : 316606.92, "buy" : 316606.92, "sell" : 316606.92, "symbol" : "฿"},
+  "TWD" : {"15m" : 324959.15, "last" : 324959.15, "buy" : 324959.15, "sell" : 324959.15, "symbol" : "NT$"}
+} <class 'str'>
+{'USD': {'15m': 10417.1, 'last': 10417.1, 'buy': 10417.1, 'sell': 10417.1, 'symbol': '$'}, 'AUD': {'15m': 15211.88, 'last': 15211.88, 'buy': 15211.88, 'sell': 15211.88, 'symbol': '$'}, 'BRL': {'15m': 42313.22, 'last': 42313.22, 'buy': 42313.22, 'sell': 42313.22, 'symbol': 'R$'}, 'CAD': {'15m': 13720.88, 'last': 13720.88, 'buy': 13720.88, 'sell': 13720.88, 'symbol': '$'}, 'CHF': {'15m': 10287.41, 'last': 10287.41, 'buy': 10287.41, 'sell': 10287.41, 'symbol': 'CHF'}, 'CLP': {'15m': 7413778.9, 'last': 7413778.9, 'buy': 7413778.9, 'sell': 7413778.9, 'symbol': '$'}, 'CNY': {'15m': 74124.96, 'last': 74124.96, 'buy': 74124.96, 'sell': 74124.96, 'symbol': '¥'}, 'DKK': {'15m': 70494.6, 'last': 70494.6, 'buy': 70494.6, 'sell': 70494.6, 'symbol': 'kr'}, 'EUR': {'15m': 9442.71, 'last': 9442.71, 'buy': 9442.71, 'sell': 9442.71, 'symbol': '€'}, 'GBP': {'15m': 8479.83, 'last': 8479.83, 'buy': 8479.83, 'sell': 8479.83, 'symbol': '£'}, 'HKD': {'15m': 81668.5, 'last': 81668.5, 'buy': 81668.5, 'sell': 81668.5, 'symbol': '$'}, 'INR': {'15m': 746687.3, 'last': 746687.3, 'buy': 746687.3, 'sell': 746687.3, 'symbol': '₹'}, 'ISK': {'15m': 1315781.74, 'last': 1315781.74, 'buy': 1315781.74, 'sell': 1315781.74, 'symbol': 'kr'}, 'JPY': {'15m': 1113722.88, 'last': 1113722.88, 'buy': 1113722.88, 'sell': 1113722.88, 'symbol': '¥'}, 'KRW': {'15m': 12425256.32, 'last': 12425256.32, 'buy': 12425256.32, 'sell': 12425256.32, 'symbol': '₩'}, 'NZD': {'15m': 16210.05, 'last': 16210.05, 'buy': 16210.05, 'sell': 16210.05, 'symbol': '$'}, 'PLN': {'15m': 40974.1, 'last': 40974.1, 'buy': 40974.1, 'sell': 40974.1, 'symbol': 'zł'}, 'RUB': {'15m': 685314.96, 'last': 685314.96, 'buy': 685314.96, 'sell': 685314.96, 'symbol': 'RUB'}, 'SEK': {'15m': 100494.8, 'last': 100494.8, 'buy': 100494.8, 'sell': 100494.8, 'symbol': 'kr'}, 'SGD': {'15m': 14391.22, 'last': 14391.22, 'buy': 14391.22, 'sell': 14391.22, 'symbol': '$'}, 'THB': {'15m': 316606.92, 'last': 316606.92, 'buy': 316606.92, 'sell': 316606.92, 'symbol': '฿'}, 'TWD': {'15m': 324959.15, 'last': 324959.15, 'buy': 324959.15, 'sell': 324959.15, 'symbol': 'NT$'}} <class 'dict'>
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py", line 15, in <module>
+    BitCoin_price(input("Enter the Currency Code"),input("Enter the value"))
+  File "C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py", line 11, in BitCoin_price
+    usd_value=j_response['data'][0]["symbol"]+"  "+j_response['data'][0]["last"]
+KeyError: 'data'
+>>> 
+========== RESTART: C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py ==========
+Enter the Currency Code"USD"
+Enter the value"5000"
+ https://blockchain.info/ticker?currency ="USD"&value="5000"
+<Response [200]> {
+  "USD" : {"15m" : 10417.15, "last" : 10417.15, "buy" : 10417.15, "sell" : 10417.15, "symbol" : "$"},
+  "AUD" : {"15m" : 15211.95, "last" : 15211.95, "buy" : 15211.95, "sell" : 15211.95, "symbol" : "$"},
+  "BRL" : {"15m" : 42313.41, "last" : 42313.41, "buy" : 42313.41, "sell" : 42313.41, "symbol" : "R$"},
+  "CAD" : {"15m" : 13720.95, "last" : 13720.95, "buy" : 13720.95, "sell" : 13720.95, "symbol" : "$"},
+  "CHF" : {"15m" : 10287.45, "last" : 10287.45, "buy" : 10287.45, "sell" : 10287.45, "symbol" : "CHF"},
+  "CLP" : {"15m" : 7413813.3, "last" : 7413813.3, "buy" : 7413813.3, "sell" : 7413813.3, "symbol" : "$"},
+  "CNY" : {"15m" : 74125.3, "last" : 74125.3, "buy" : 74125.3, "sell" : 74125.3, "symbol" : "¥"},
+  "DKK" : {"15m" : 70494.93, "last" : 70494.93, "buy" : 70494.93, "sell" : 70494.93, "symbol" : "kr"},
+  "EUR" : {"15m" : 9444.77, "last" : 9444.77, "buy" : 9444.77, "sell" : 9444.77, "symbol" : "€"},
+  "GBP" : {"15m" : 8479.87, "last" : 8479.87, "buy" : 8479.87, "sell" : 8479.87, "symbol" : "£"},
+  "HKD" : {"15m" : 81668.88, "last" : 81668.88, "buy" : 81668.88, "sell" : 81668.88, "symbol" : "$"},
+  "INR" : {"15m" : 746690.77, "last" : 746690.77, "buy" : 746690.77, "sell" : 746690.77, "symbol" : "₹"},
+  "ISK" : {"15m" : 1315787.84, "last" : 1315787.84, "buy" : 1315787.84, "sell" : 1315787.84, "symbol" : "kr"},
+  "JPY" : {"15m" : 1114291.8, "last" : 1114291.8, "buy" : 1114291.8, "sell" : 1114291.8, "symbol" : "¥"},
+  "KRW" : {"15m" : 1.242531396E7, "last" : 1.242531396E7, "buy" : 1.242531396E7, "sell" : 1.242531396E7, "symbol" : "₩"},
+  "NZD" : {"15m" : 16210.12, "last" : 16210.12, "buy" : 16210.12, "sell" : 16210.12, "symbol" : "$"},
+  "PLN" : {"15m" : 40974.29, "last" : 40974.29, "buy" : 40974.29, "sell" : 40974.29, "symbol" : "zł"},
+  "RUB" : {"15m" : 685318.14, "last" : 685318.14, "buy" : 685318.14, "sell" : 685318.14, "symbol" : "RUB"},
+  "SEK" : {"15m" : 100495.27, "last" : 100495.27, "buy" : 100495.27, "sell" : 100495.27, "symbol" : "kr"},
+  "SGD" : {"15m" : 14391.29, "last" : 14391.29, "buy" : 14391.29, "sell" : 14391.29, "symbol" : "$"},
+  "THB" : {"15m" : 316608.39, "last" : 316608.39, "buy" : 316608.39, "sell" : 316608.39, "symbol" : "฿"},
+  "TWD" : {"15m" : 324960.66, "last" : 324960.66, "buy" : 324960.66, "sell" : 324960.66, "symbol" : "NT$"}
+} <class 'str'>
+{'USD': {'15m': 10417.15, 'last': 10417.15, 'buy': 10417.15, 'sell': 10417.15, 'symbol': '$'}, 'AUD': {'15m': 15211.95, 'last': 15211.95, 'buy': 15211.95, 'sell': 15211.95, 'symbol': '$'}, 'BRL': {'15m': 42313.41, 'last': 42313.41, 'buy': 42313.41, 'sell': 42313.41, 'symbol': 'R$'}, 'CAD': {'15m': 13720.95, 'last': 13720.95, 'buy': 13720.95, 'sell': 13720.95, 'symbol': '$'}, 'CHF': {'15m': 10287.45, 'last': 10287.45, 'buy': 10287.45, 'sell': 10287.45, 'symbol': 'CHF'}, 'CLP': {'15m': 7413813.3, 'last': 7413813.3, 'buy': 7413813.3, 'sell': 7413813.3, 'symbol': '$'}, 'CNY': {'15m': 74125.3, 'last': 74125.3, 'buy': 74125.3, 'sell': 74125.3, 'symbol': '¥'}, 'DKK': {'15m': 70494.93, 'last': 70494.93, 'buy': 70494.93, 'sell': 70494.93, 'symbol': 'kr'}, 'EUR': {'15m': 9444.77, 'last': 9444.77, 'buy': 9444.77, 'sell': 9444.77, 'symbol': '€'}, 'GBP': {'15m': 8479.87, 'last': 8479.87, 'buy': 8479.87, 'sell': 8479.87, 'symbol': '£'}, 'HKD': {'15m': 81668.88, 'last': 81668.88, 'buy': 81668.88, 'sell': 81668.88, 'symbol': '$'}, 'INR': {'15m': 746690.77, 'last': 746690.77, 'buy': 746690.77, 'sell': 746690.77, 'symbol': '₹'}, 'ISK': {'15m': 1315787.84, 'last': 1315787.84, 'buy': 1315787.84, 'sell': 1315787.84, 'symbol': 'kr'}, 'JPY': {'15m': 1114291.8, 'last': 1114291.8, 'buy': 1114291.8, 'sell': 1114291.8, 'symbol': '¥'}, 'KRW': {'15m': 12425313.96, 'last': 12425313.96, 'buy': 12425313.96, 'sell': 12425313.96, 'symbol': '₩'}, 'NZD': {'15m': 16210.12, 'last': 16210.12, 'buy': 16210.12, 'sell': 16210.12, 'symbol': '$'}, 'PLN': {'15m': 40974.29, 'last': 40974.29, 'buy': 40974.29, 'sell': 40974.29, 'symbol': 'zł'}, 'RUB': {'15m': 685318.14, 'last': 685318.14, 'buy': 685318.14, 'sell': 685318.14, 'symbol': 'RUB'}, 'SEK': {'15m': 100495.27, 'last': 100495.27, 'buy': 100495.27, 'sell': 100495.27, 'symbol': 'kr'}, 'SGD': {'15m': 14391.29, 'last': 14391.29, 'buy': 14391.29, 'sell': 14391.29, 'symbol': '$'}, 'THB': {'15m': 316608.39, 'last': 316608.39, 'buy': 316608.39, 'sell': 316608.39, 'symbol': '฿'}, 'TWD': {'15m': 324960.66, 'last': 324960.66, 'buy': 324960.66, 'sell': 324960.66, 'symbol': 'NT$'}} <class 'dict'>
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py", line 15, in <module>
+    BitCoin_price(input("Enter the Currency Code"),input("Enter the value"))
+  File "C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py", line 11, in BitCoin_price
+    usd_value=j_response[0]["symbol"]+"  "+j_response[0]["last"]
+KeyError: 0
+>>> 
+========== RESTART: C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py ==========
+Enter the Currency Code"USD"
+Enter the value"500"
+ https://blockchain.info/ticker?currency ="USD"&value="500"
+<Response [200]> {
+  "USD" : {"15m" : 10417.15, "last" : 10417.15, "buy" : 10417.15, "sell" : 10417.15, "symbol" : "$"},
+  "AUD" : {"15m" : 15211.95, "last" : 15211.95, "buy" : 15211.95, "sell" : 15211.95, "symbol" : "$"},
+  "BRL" : {"15m" : 42313.41, "last" : 42313.41, "buy" : 42313.41, "sell" : 42313.41, "symbol" : "R$"},
+  "CAD" : {"15m" : 13720.95, "last" : 13720.95, "buy" : 13720.95, "sell" : 13720.95, "symbol" : "$"},
+  "CHF" : {"15m" : 10287.45, "last" : 10287.45, "buy" : 10287.45, "sell" : 10287.45, "symbol" : "CHF"},
+  "CLP" : {"15m" : 7413813.3, "last" : 7413813.3, "buy" : 7413813.3, "sell" : 7413813.3, "symbol" : "$"},
+  "CNY" : {"15m" : 74125.3, "last" : 74125.3, "buy" : 74125.3, "sell" : 74125.3, "symbol" : "¥"},
+  "DKK" : {"15m" : 70494.93, "last" : 70494.93, "buy" : 70494.93, "sell" : 70494.93, "symbol" : "kr"},
+  "EUR" : {"15m" : 9444.77, "last" : 9444.77, "buy" : 9444.77, "sell" : 9444.77, "symbol" : "€"},
+  "GBP" : {"15m" : 8479.87, "last" : 8479.87, "buy" : 8479.87, "sell" : 8479.87, "symbol" : "£"},
+  "HKD" : {"15m" : 81668.88, "last" : 81668.88, "buy" : 81668.88, "sell" : 81668.88, "symbol" : "$"},
+  "INR" : {"15m" : 746690.77, "last" : 746690.77, "buy" : 746690.77, "sell" : 746690.77, "symbol" : "₹"},
+  "ISK" : {"15m" : 1315787.84, "last" : 1315787.84, "buy" : 1315787.84, "sell" : 1315787.84, "symbol" : "kr"},
+  "JPY" : {"15m" : 1114291.8, "last" : 1114291.8, "buy" : 1114291.8, "sell" : 1114291.8, "symbol" : "¥"},
+  "KRW" : {"15m" : 1.242531396E7, "last" : 1.242531396E7, "buy" : 1.242531396E7, "sell" : 1.242531396E7, "symbol" : "₩"},
+  "NZD" : {"15m" : 16210.12, "last" : 16210.12, "buy" : 16210.12, "sell" : 16210.12, "symbol" : "$"},
+  "PLN" : {"15m" : 40974.29, "last" : 40974.29, "buy" : 40974.29, "sell" : 40974.29, "symbol" : "zł"},
+  "RUB" : {"15m" : 685318.14, "last" : 685318.14, "buy" : 685318.14, "sell" : 685318.14, "symbol" : "RUB"},
+  "SEK" : {"15m" : 100495.27, "last" : 100495.27, "buy" : 100495.27, "sell" : 100495.27, "symbol" : "kr"},
+  "SGD" : {"15m" : 14391.29, "last" : 14391.29, "buy" : 14391.29, "sell" : 14391.29, "symbol" : "$"},
+  "THB" : {"15m" : 316608.39, "last" : 316608.39, "buy" : 316608.39, "sell" : 316608.39, "symbol" : "฿"},
+  "TWD" : {"15m" : 324960.66, "last" : 324960.66, "buy" : 324960.66, "sell" : 324960.66, "symbol" : "NT$"}
+} <class 'str'>
+{'USD': {'15m': 10417.15, 'last': 10417.15, 'buy': 10417.15, 'sell': 10417.15, 'symbol': '$'}, 'AUD': {'15m': 15211.95, 'last': 15211.95, 'buy': 15211.95, 'sell': 15211.95, 'symbol': '$'}, 'BRL': {'15m': 42313.41, 'last': 42313.41, 'buy': 42313.41, 'sell': 42313.41, 'symbol': 'R$'}, 'CAD': {'15m': 13720.95, 'last': 13720.95, 'buy': 13720.95, 'sell': 13720.95, 'symbol': '$'}, 'CHF': {'15m': 10287.45, 'last': 10287.45, 'buy': 10287.45, 'sell': 10287.45, 'symbol': 'CHF'}, 'CLP': {'15m': 7413813.3, 'last': 7413813.3, 'buy': 7413813.3, 'sell': 7413813.3, 'symbol': '$'}, 'CNY': {'15m': 74125.3, 'last': 74125.3, 'buy': 74125.3, 'sell': 74125.3, 'symbol': '¥'}, 'DKK': {'15m': 70494.93, 'last': 70494.93, 'buy': 70494.93, 'sell': 70494.93, 'symbol': 'kr'}, 'EUR': {'15m': 9444.77, 'last': 9444.77, 'buy': 9444.77, 'sell': 9444.77, 'symbol': '€'}, 'GBP': {'15m': 8479.87, 'last': 8479.87, 'buy': 8479.87, 'sell': 8479.87, 'symbol': '£'}, 'HKD': {'15m': 81668.88, 'last': 81668.88, 'buy': 81668.88, 'sell': 81668.88, 'symbol': '$'}, 'INR': {'15m': 746690.77, 'last': 746690.77, 'buy': 746690.77, 'sell': 746690.77, 'symbol': '₹'}, 'ISK': {'15m': 1315787.84, 'last': 1315787.84, 'buy': 1315787.84, 'sell': 1315787.84, 'symbol': 'kr'}, 'JPY': {'15m': 1114291.8, 'last': 1114291.8, 'buy': 1114291.8, 'sell': 1114291.8, 'symbol': '¥'}, 'KRW': {'15m': 12425313.96, 'last': 12425313.96, 'buy': 12425313.96, 'sell': 12425313.96, 'symbol': '₩'}, 'NZD': {'15m': 16210.12, 'last': 16210.12, 'buy': 16210.12, 'sell': 16210.12, 'symbol': '$'}, 'PLN': {'15m': 40974.29, 'last': 40974.29, 'buy': 40974.29, 'sell': 40974.29, 'symbol': 'zł'}, 'RUB': {'15m': 685318.14, 'last': 685318.14, 'buy': 685318.14, 'sell': 685318.14, 'symbol': 'RUB'}, 'SEK': {'15m': 100495.27, 'last': 100495.27, 'buy': 100495.27, 'sell': 100495.27, 'symbol': 'kr'}, 'SGD': {'15m': 14391.29, 'last': 14391.29, 'buy': 14391.29, 'sell': 14391.29, 'symbol': '$'}, 'THB': {'15m': 316608.39, 'last': 316608.39, 'buy': 316608.39, 'sell': 316608.39, 'symbol': '฿'}, 'TWD': {'15m': 324960.66, 'last': 324960.66, 'buy': 324960.66, 'sell': 324960.66, 'symbol': 'NT$'}} <class 'dict'>
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py", line 15, in <module>
+    BitCoin_price(input("Enter the Currency Code"),input("Enter the value"))
+  File "C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py", line 11, in BitCoin_price
+    usd_value=j_response['data'][0]["symbol"]+"  "+j_response['data'][0]["last"]
+KeyError: 'data'
+>>> 
+========== RESTART: C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py ==========
+Enter the Currency Code"USD"
+Enter the value"500"
+ https://blockchain.info/ticker?currency ="USD"&value="500"
+<Response [200]> {
+  "USD" : {"15m" : 10412.08, "last" : 10412.08, "buy" : 10412.08, "sell" : 10412.08, "symbol" : "$"},
+  "AUD" : {"15m" : 15204.56, "last" : 15204.56, "buy" : 15204.56, "sell" : 15204.56, "symbol" : "$"},
+  "BRL" : {"15m" : 42292.84, "last" : 42292.84, "buy" : 42292.84, "sell" : 42292.84, "symbol" : "R$"},
+  "CAD" : {"15m" : 13714.27, "last" : 13714.27, "buy" : 13714.27, "sell" : 13714.27, "symbol" : "$"},
+  "CHF" : {"15m" : 10282.45, "last" : 10282.45, "buy" : 10282.45, "sell" : 10282.45, "symbol" : "CHF"},
+  "CLP" : {"15m" : 7410207.75, "last" : 7410207.75, "buy" : 7410207.75, "sell" : 7410207.75, "symbol" : "$"},
+  "CNY" : {"15m" : 74089.25, "last" : 74089.25, "buy" : 74089.25, "sell" : 74089.25, "symbol" : "¥"},
+  "DKK" : {"15m" : 70460.64, "last" : 70460.64, "buy" : 70460.64, "sell" : 70460.64, "symbol" : "kr"},
+  "EUR" : {"15m" : 9440.92, "last" : 9440.92, "buy" : 9440.92, "sell" : 9440.92, "symbol" : "€"},
+  "GBP" : {"15m" : 8475.75, "last" : 8475.75, "buy" : 8475.75, "sell" : 8475.75, "symbol" : "£"},
+  "HKD" : {"15m" : 81629.16, "last" : 81629.16, "buy" : 81629.16, "sell" : 81629.16, "symbol" : "$"},
+  "INR" : {"15m" : 746327.63, "last" : 746327.63, "buy" : 746327.63, "sell" : 746327.63, "symbol" : "₹"},
+  "ISK" : {"15m" : 1315147.94, "last" : 1315147.94, "buy" : 1315147.94, "sell" : 1315147.94, "symbol" : "kr"},
+  "JPY" : {"15m" : 1113878.67, "last" : 1113878.67, "buy" : 1113878.67, "sell" : 1113878.67, "symbol" : "¥"},
+  "KRW" : {"15m" : 1.241927118E7, "last" : 1.241927118E7, "buy" : 1.241927118E7, "sell" : 1.241927118E7, "symbol" : "₩"},
+  "NZD" : {"15m" : 16202.24, "last" : 16202.24, "buy" : 16202.24, "sell" : 16202.24, "symbol" : "$"},
+  "PLN" : {"15m" : 40954.36, "last" : 40954.36, "buy" : 40954.36, "sell" : 40954.36, "symbol" : "zł"},
+  "RUB" : {"15m" : 684984.85, "last" : 684984.85, "buy" : 684984.85, "sell" : 684984.85, "symbol" : "RUB"},
+  "SEK" : {"15m" : 100446.4, "last" : 100446.4, "buy" : 100446.4, "sell" : 100446.4, "symbol" : "kr"},
+  "SGD" : {"15m" : 14384.29, "last" : 14384.29, "buy" : 14384.29, "sell" : 14384.29, "symbol" : "$"},
+  "THB" : {"15m" : 316454.41, "last" : 316454.41, "buy" : 316454.41, "sell" : 316454.41, "symbol" : "฿"},
+  "TWD" : {"15m" : 324802.62, "last" : 324802.62, "buy" : 324802.62, "sell" : 324802.62, "symbol" : "NT$"}
+} <class 'str'>
+{'USD': {'15m': 10412.08, 'last': 10412.08, 'buy': 10412.08, 'sell': 10412.08, 'symbol': '$'}, 'AUD': {'15m': 15204.56, 'last': 15204.56, 'buy': 15204.56, 'sell': 15204.56, 'symbol': '$'}, 'BRL': {'15m': 42292.84, 'last': 42292.84, 'buy': 42292.84, 'sell': 42292.84, 'symbol': 'R$'}, 'CAD': {'15m': 13714.27, 'last': 13714.27, 'buy': 13714.27, 'sell': 13714.27, 'symbol': '$'}, 'CHF': {'15m': 10282.45, 'last': 10282.45, 'buy': 10282.45, 'sell': 10282.45, 'symbol': 'CHF'}, 'CLP': {'15m': 7410207.75, 'last': 7410207.75, 'buy': 7410207.75, 'sell': 7410207.75, 'symbol': '$'}, 'CNY': {'15m': 74089.25, 'last': 74089.25, 'buy': 74089.25, 'sell': 74089.25, 'symbol': '¥'}, 'DKK': {'15m': 70460.64, 'last': 70460.64, 'buy': 70460.64, 'sell': 70460.64, 'symbol': 'kr'}, 'EUR': {'15m': 9440.92, 'last': 9440.92, 'buy': 9440.92, 'sell': 9440.92, 'symbol': '€'}, 'GBP': {'15m': 8475.75, 'last': 8475.75, 'buy': 8475.75, 'sell': 8475.75, 'symbol': '£'}, 'HKD': {'15m': 81629.16, 'last': 81629.16, 'buy': 81629.16, 'sell': 81629.16, 'symbol': '$'}, 'INR': {'15m': 746327.63, 'last': 746327.63, 'buy': 746327.63, 'sell': 746327.63, 'symbol': '₹'}, 'ISK': {'15m': 1315147.94, 'last': 1315147.94, 'buy': 1315147.94, 'sell': 1315147.94, 'symbol': 'kr'}, 'JPY': {'15m': 1113878.67, 'last': 1113878.67, 'buy': 1113878.67, 'sell': 1113878.67, 'symbol': '¥'}, 'KRW': {'15m': 12419271.18, 'last': 12419271.18, 'buy': 12419271.18, 'sell': 12419271.18, 'symbol': '₩'}, 'NZD': {'15m': 16202.24, 'last': 16202.24, 'buy': 16202.24, 'sell': 16202.24, 'symbol': '$'}, 'PLN': {'15m': 40954.36, 'last': 40954.36, 'buy': 40954.36, 'sell': 40954.36, 'symbol': 'zł'}, 'RUB': {'15m': 684984.85, 'last': 684984.85, 'buy': 684984.85, 'sell': 684984.85, 'symbol': 'RUB'}, 'SEK': {'15m': 100446.4, 'last': 100446.4, 'buy': 100446.4, 'sell': 100446.4, 'symbol': 'kr'}, 'SGD': {'15m': 14384.29, 'last': 14384.29, 'buy': 14384.29, 'sell': 14384.29, 'symbol': '$'}, 'THB': {'15m': 316454.41, 'last': 316454.41, 'buy': 316454.41, 'sell': 316454.41, 'symbol': '฿'}, 'TWD': {'15m': 324802.62, 'last': 324802.62, 'buy': 324802.62, 'sell': 324802.62, 'symbol': 'NT$'}} <class 'dict'>
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py", line 15, in <module>
+    BitCoin_price(input("Enter the Currency Code"),input("Enter the value"))
+  File "C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py", line 11, in BitCoin_price
+    usd_value=j_response['USD'][0]["symbol"]+"  "+j_response['USD'][0]["last"]
+KeyError: 0
+>>> 
+========== RESTART: C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py ==========
+Enter the Currency Code"USD"
+Enter the value"500"
+ https://blockchain.info/ticker?currency ="USD"&value="500"
+<Response [200]> {
+  "USD" : {"15m" : 10412.08, "last" : 10412.08, "buy" : 10412.08, "sell" : 10412.08, "symbol" : "$"},
+  "AUD" : {"15m" : 15204.56, "last" : 15204.56, "buy" : 15204.56, "sell" : 15204.56, "symbol" : "$"},
+  "BRL" : {"15m" : 42292.84, "last" : 42292.84, "buy" : 42292.84, "sell" : 42292.84, "symbol" : "R$"},
+  "CAD" : {"15m" : 13714.27, "last" : 13714.27, "buy" : 13714.27, "sell" : 13714.27, "symbol" : "$"},
+  "CHF" : {"15m" : 10282.45, "last" : 10282.45, "buy" : 10282.45, "sell" : 10282.45, "symbol" : "CHF"},
+  "CLP" : {"15m" : 7410207.75, "last" : 7410207.75, "buy" : 7410207.75, "sell" : 7410207.75, "symbol" : "$"},
+  "CNY" : {"15m" : 74089.25, "last" : 74089.25, "buy" : 74089.25, "sell" : 74089.25, "symbol" : "¥"},
+  "DKK" : {"15m" : 70460.64, "last" : 70460.64, "buy" : 70460.64, "sell" : 70460.64, "symbol" : "kr"},
+  "EUR" : {"15m" : 9440.92, "last" : 9440.92, "buy" : 9440.92, "sell" : 9440.92, "symbol" : "€"},
+  "GBP" : {"15m" : 8475.75, "last" : 8475.75, "buy" : 8475.75, "sell" : 8475.75, "symbol" : "£"},
+  "HKD" : {"15m" : 81629.16, "last" : 81629.16, "buy" : 81629.16, "sell" : 81629.16, "symbol" : "$"},
+  "INR" : {"15m" : 746327.63, "last" : 746327.63, "buy" : 746327.63, "sell" : 746327.63, "symbol" : "₹"},
+  "ISK" : {"15m" : 1315147.94, "last" : 1315147.94, "buy" : 1315147.94, "sell" : 1315147.94, "symbol" : "kr"},
+  "JPY" : {"15m" : 1113878.67, "last" : 1113878.67, "buy" : 1113878.67, "sell" : 1113878.67, "symbol" : "¥"},
+  "KRW" : {"15m" : 1.241927118E7, "last" : 1.241927118E7, "buy" : 1.241927118E7, "sell" : 1.241927118E7, "symbol" : "₩"},
+  "NZD" : {"15m" : 16202.24, "last" : 16202.24, "buy" : 16202.24, "sell" : 16202.24, "symbol" : "$"},
+  "PLN" : {"15m" : 40954.36, "last" : 40954.36, "buy" : 40954.36, "sell" : 40954.36, "symbol" : "zł"},
+  "RUB" : {"15m" : 684984.85, "last" : 684984.85, "buy" : 684984.85, "sell" : 684984.85, "symbol" : "RUB"},
+  "SEK" : {"15m" : 100446.4, "last" : 100446.4, "buy" : 100446.4, "sell" : 100446.4, "symbol" : "kr"},
+  "SGD" : {"15m" : 14384.29, "last" : 14384.29, "buy" : 14384.29, "sell" : 14384.29, "symbol" : "$"},
+  "THB" : {"15m" : 316454.41, "last" : 316454.41, "buy" : 316454.41, "sell" : 316454.41, "symbol" : "฿"},
+  "TWD" : {"15m" : 324802.62, "last" : 324802.62, "buy" : 324802.62, "sell" : 324802.62, "symbol" : "NT$"}
+} <class 'str'>
+{'USD': {'15m': 10412.08, 'last': 10412.08, 'buy': 10412.08, 'sell': 10412.08, 'symbol': '$'}, 'AUD': {'15m': 15204.56, 'last': 15204.56, 'buy': 15204.56, 'sell': 15204.56, 'symbol': '$'}, 'BRL': {'15m': 42292.84, 'last': 42292.84, 'buy': 42292.84, 'sell': 42292.84, 'symbol': 'R$'}, 'CAD': {'15m': 13714.27, 'last': 13714.27, 'buy': 13714.27, 'sell': 13714.27, 'symbol': '$'}, 'CHF': {'15m': 10282.45, 'last': 10282.45, 'buy': 10282.45, 'sell': 10282.45, 'symbol': 'CHF'}, 'CLP': {'15m': 7410207.75, 'last': 7410207.75, 'buy': 7410207.75, 'sell': 7410207.75, 'symbol': '$'}, 'CNY': {'15m': 74089.25, 'last': 74089.25, 'buy': 74089.25, 'sell': 74089.25, 'symbol': '¥'}, 'DKK': {'15m': 70460.64, 'last': 70460.64, 'buy': 70460.64, 'sell': 70460.64, 'symbol': 'kr'}, 'EUR': {'15m': 9440.92, 'last': 9440.92, 'buy': 9440.92, 'sell': 9440.92, 'symbol': '€'}, 'GBP': {'15m': 8475.75, 'last': 8475.75, 'buy': 8475.75, 'sell': 8475.75, 'symbol': '£'}, 'HKD': {'15m': 81629.16, 'last': 81629.16, 'buy': 81629.16, 'sell': 81629.16, 'symbol': '$'}, 'INR': {'15m': 746327.63, 'last': 746327.63, 'buy': 746327.63, 'sell': 746327.63, 'symbol': '₹'}, 'ISK': {'15m': 1315147.94, 'last': 1315147.94, 'buy': 1315147.94, 'sell': 1315147.94, 'symbol': 'kr'}, 'JPY': {'15m': 1113878.67, 'last': 1113878.67, 'buy': 1113878.67, 'sell': 1113878.67, 'symbol': '¥'}, 'KRW': {'15m': 12419271.18, 'last': 12419271.18, 'buy': 12419271.18, 'sell': 12419271.18, 'symbol': '₩'}, 'NZD': {'15m': 16202.24, 'last': 16202.24, 'buy': 16202.24, 'sell': 16202.24, 'symbol': '$'}, 'PLN': {'15m': 40954.36, 'last': 40954.36, 'buy': 40954.36, 'sell': 40954.36, 'symbol': 'zł'}, 'RUB': {'15m': 684984.85, 'last': 684984.85, 'buy': 684984.85, 'sell': 684984.85, 'symbol': 'RUB'}, 'SEK': {'15m': 100446.4, 'last': 100446.4, 'buy': 100446.4, 'sell': 100446.4, 'symbol': 'kr'}, 'SGD': {'15m': 14384.29, 'last': 14384.29, 'buy': 14384.29, 'sell': 14384.29, 'symbol': '$'}, 'THB': {'15m': 316454.41, 'last': 316454.41, 'buy': 316454.41, 'sell': 316454.41, 'symbol': '฿'}, 'TWD': {'15m': 324802.62, 'last': 324802.62, 'buy': 324802.62, 'sell': 324802.62, 'symbol': 'NT$'}} <class 'dict'>
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py", line 15, in <module>
+    BitCoin_price(input("Enter the Currency Code"),input("Enter the value"))
+  File "C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py", line 11, in BitCoin_price
+    usd_value=j_response['USD']["symbol"]+"  "+j_response['USD']["last"]
+TypeError: can only concatenate str (not "float") to str
+>>> 
+========== RESTART: C:/Users/Pranav/Desktop/PYTHON/Bitcoin_price.py ==========
+Enter the Currency Code"USD"
+Enter the value"500"
+ https://blockchain.info/ticker?currency ="USD"&value="500"
+<Response [200]> {
+  "USD" : {"15m" : 10412.27, "last" : 10412.27, "buy" : 10412.27, "sell" : 10412.27, "symbol" : "$"},
+  "AUD" : {"15m" : 15204.83, "last" : 15204.83, "buy" : 15204.83, "sell" : 15204.83, "symbol" : "$"},
+  "BRL" : {"15m" : 42293.6, "last" : 42293.6, "buy" : 42293.6, "sell" : 42293.6, "symbol" : "R$"},
+  "CAD" : {"15m" : 13714.52, "last" : 13714.52, "buy" : 13714.52, "sell" : 13714.52, "symbol" : "$"},
+  "CHF" : {"15m" : 10282.64, "last" : 10282.64, "buy" : 10282.64, "sell" : 10282.64, "symbol" : "CHF"},
+  "CLP" : {"15m" : 7410342.14, "last" : 7410342.14, "buy" : 7410342.14, "sell" : 7410342.14, "symbol" : "$"},
+  "CNY" : {"15m" : 74090.6, "last" : 74090.6, "buy" : 74090.6, "sell" : 74090.6, "symbol" : "¥"},
+  "DKK" : {"15m" : 70461.92, "last" : 70461.92, "buy" : 70461.92, "sell" : 70461.92, "symbol" : "kr"},
+  "EUR" : {"15m" : 9440.92, "last" : 9440.92, "buy" : 9440.92, "sell" : 9440.92, "symbol" : "€"},
+  "GBP" : {"15m" : 8475.9, "last" : 8475.9, "buy" : 8475.9, "sell" : 8475.9, "symbol" : "£"},
+  "HKD" : {"15m" : 81630.64, "last" : 81630.64, "buy" : 81630.64, "sell" : 81630.64, "symbol" : "$"},
+  "INR" : {"15m" : 746341.17, "last" : 746341.17, "buy" : 746341.17, "sell" : 746341.17, "symbol" : "₹"},
+  "ISK" : {"15m" : 1315171.79, "last" : 1315171.79, "buy" : 1315171.79, "sell" : 1315171.79, "symbol" : "kr"},
+  "JPY" : {"15m" : 1113630.67, "last" : 1113630.67, "buy" : 1113630.67, "sell" : 1113630.67, "symbol" : "¥"},
+  "KRW" : {"15m" : 1.241949642E7, "last" : 1.241949642E7, "buy" : 1.241949642E7, "sell" : 1.241949642E7, "symbol" : "₩"},
+  "NZD" : {"15m" : 16202.53, "last" : 16202.53, "buy" : 16202.53, "sell" : 16202.53, "symbol" : "$"},
+  "PLN" : {"15m" : 40955.11, "last" : 40955.11, "buy" : 40955.11, "sell" : 40955.11, "symbol" : "zł"},
+  "RUB" : {"15m" : 684997.27, "last" : 684997.27, "buy" : 684997.27, "sell" : 684997.27, "symbol" : "RUB"},
+  "SEK" : {"15m" : 100448.22, "last" : 100448.22, "buy" : 100448.22, "sell" : 100448.22, "symbol" : "kr"},
+  "SGD" : {"15m" : 14384.55, "last" : 14384.55, "buy" : 14384.55, "sell" : 14384.55, "symbol" : "$"},
+  "THB" : {"15m" : 316460.15, "last" : 316460.15, "buy" : 316460.15, "sell" : 316460.15, "symbol" : "฿"},
+  "TWD" : {"15m" : 324808.51, "last" : 324808.51, "buy" : 324808.51, "sell" : 324808.51, "symbol" : "NT$"}
+} <class 'str'>
+{'USD': {'15m': 10412.27, 'last': 10412.27, 'buy': 10412.27, 'sell': 10412.27, 'symbol': '$'}, 'AUD': {'15m': 15204.83, 'last': 15204.83, 'buy': 15204.83, 'sell': 15204.83, 'symbol': '$'}, 'BRL': {'15m': 42293.6, 'last': 42293.6, 'buy': 42293.6, 'sell': 42293.6, 'symbol': 'R$'}, 'CAD': {'15m': 13714.52, 'last': 13714.52, 'buy': 13714.52, 'sell': 13714.52, 'symbol': '$'}, 'CHF': {'15m': 10282.64, 'last': 10282.64, 'buy': 10282.64, 'sell': 10282.64, 'symbol': 'CHF'}, 'CLP': {'15m': 7410342.14, 'last': 7410342.14, 'buy': 7410342.14, 'sell': 7410342.14, 'symbol': '$'}, 'CNY': {'15m': 74090.6, 'last': 74090.6, 'buy': 74090.6, 'sell': 74090.6, 'symbol': '¥'}, 'DKK': {'15m': 70461.92, 'last': 70461.92, 'buy': 70461.92, 'sell': 70461.92, 'symbol': 'kr'}, 'EUR': {'15m': 9440.92, 'last': 9440.92, 'buy': 9440.92, 'sell': 9440.92, 'symbol': '€'}, 'GBP': {'15m': 8475.9, 'last': 8475.9, 'buy': 8475.9, 'sell': 8475.9, 'symbol': '£'}, 'HKD': {'15m': 81630.64, 'last': 81630.64, 'buy': 81630.64, 'sell': 81630.64, 'symbol': '$'}, 'INR': {'15m': 746341.17, 'last': 746341.17, 'buy': 746341.17, 'sell': 746341.17, 'symbol': '₹'}, 'ISK': {'15m': 1315171.79, 'last': 1315171.79, 'buy': 1315171.79, 'sell': 1315171.79, 'symbol': 'kr'}, 'JPY': {'15m': 1113630.67, 'last': 1113630.67, 'buy': 1113630.67, 'sell': 1113630.67, 'symbol': '¥'}, 'KRW': {'15m': 12419496.42, 'last': 12419496.42, 'buy': 12419496.42, 'sell': 12419496.42, 'symbol': '₩'}, 'NZD': {'15m': 16202.53, 'last': 16202.53, 'buy': 16202.53, 'sell': 16202.53, 'symbol': '$'}, 'PLN': {'15m': 40955.11, 'last': 40955.11, 'buy': 40955.11, 'sell': 40955.11, 'symbol': 'zł'}, 'RUB': {'15m': 684997.27, 'last': 684997.27, 'buy': 684997.27, 'sell': 684997.27, 'symbol': 'RUB'}, 'SEK': {'15m': 100448.22, 'last': 100448.22, 'buy': 100448.22, 'sell': 100448.22, 'symbol': 'kr'}, 'SGD': {'15m': 14384.55, 'last': 14384.55, 'buy': 14384.55, 'sell': 14384.55, 'symbol': '$'}, 'THB': {'15m': 316460.15, 'last': 316460.15, 'buy': 316460.15, 'sell': 316460.15, 'symbol': '฿'}, 'TWD': {'15m': 324808.51, 'last': 324808.51, 'buy': 324808.51, 'sell': 324808.51, 'symbol': 'NT$'}} <class 'dict'>
+The value in USD is : $  10412.27
+>>> 

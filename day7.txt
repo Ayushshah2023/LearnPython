@@ -1,0 +1,273 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+============== RESTART: C:/Users/Pranav/Desktop/PYTHON/day7.py ==============
+It is not overlapping
+15
+25
+25
+error division by zero
+>>> 
+=============== RESTART: C:/Users/Pranav/Desktop/PYTHON/one.py ===============
+Hello world
+Enter first number45
+Enter 2nd number33
+78
+>>> 
+=============== RESTART: C:/Users/Pranav/Desktop/PYTHON/one.py ===============
+Hello world
+Enter first number45
+Enter 2nd number33
+Enter first number34
+Enter 2nd number33
+67
+>>> 
+=============== RESTART: C:/Users/Pranav/Desktop/PYTHON/one.py ===============
+Hello world
+Enter first number45
+Enter 2nd number33
+78
+>>> 
+=============== RESTART: C:/Users/Pranav/Desktop/PYTHON/one.py ===============
+Hello world
+Enter first number34
+Enter 2nd number44
+78
+>>> 
+=============== RESTART: C:/Users/Pranav/Desktop/PYTHON/one.py ===============
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/one.py", line 5, in <module>
+    from Dummy import two
+ModuleNotFoundError: No module named 'Dummy'
+>>> 
+=============== RESTART: C:/Users/Pranav/Desktop/PYTHON/one.py ===============
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/one.py", line 5, in <module>
+    from Dummy import two
+ModuleNotFoundError: No module named 'Dummy'
+>>> 
+=============== RESTART: C:/Users/Pranav/Desktop/PYTHON/one.py ===============
+Hello world
+Enter first number33
+Enter 2nd number44
+77
+>>> 
+=============== RESTART: C:/Users/Pranav/Desktop/PYTHON/one.py ===============
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/one.py", line 6, in <module>
+    two.test()
+NameError: name 'two' is not defined
+>>> 
+=============== RESTART: C:/Users/Pranav/Desktop/PYTHON/one.py ===============
+Hello world
+Enter first number54
+Enter 2nd number33
+87
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Mumbai University
+Enter student nameqwerty
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+AN OBJ IS CREATED
+AN OBJ IS CREATED
+Mumbai University
+Enter student namewxrx
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+AN OBJ IS CREATED
+AN OBJ IS CREATED
+Mumbai University
+Enter student name45
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+AN OBJ IS CREATED
+AN OBJ IS CREATED
+Mumbai University
+Enter student nameayush
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+AN OBJ IS CREATED
+AN OBJ IS CREATED
+Mumbai University
+Enter student namedtrjcr
+None
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+AN OBJ IS CREATED
+AN OBJ IS CREATED
+Mumbai University
+Enter student namensefo
+None
+nsefo
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+AN OBJ IS CREATED
+AN OBJ IS CREATED
+Mumbai University
+Enter student nameayush
+ayush
+Enter student nameshah
+shah
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+AN OBJ IS CREATED
+AN OBJ IS CREATED
+Mumbai University
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 16, in <module>
+    student1.assign_name(input("Enter student " + count+" name"))
+TypeError: can only concatenate str (not "int") to str
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+AN OBJ IS CREATED
+AN OBJ IS CREATED
+Mumbai University
+Enter student 1 nameAyush
+Enter student 1 id001
+Ayush
+001
+Enter student 2 nameHarshal
+Enter student 2 id002
+Harshal
+002
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+AN OBJ IS CREATED
+AN OBJ IS CREATED
+Mumbai University
+Enter student 1 nameqw
+Enter student 1 id1
+Enter student 1 branchr
+qw
+1
+r
+Enter student 2 nameert
+Enter student 2 id2
+Enter student 2 branchty
+ert
+2
+ty
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 16, in <module>
+    student1=university()
+TypeError: __init__() missing 3 required positional arguments: 'stu_name', 'stu_id', and 'stu_bran'
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 58, in <module>
+    c1.assign_rad(input("Enter radius of circle " + str(count)))
+NameError: name 'c1' is not defined
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Enter radius of circle 15
+Enter colour of circle 1red
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 62, in <module>
+    c1.area(c1.radius)
+TypeError: area() takes 1 positional argument but 2 were given
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Enter radius of circle 15
+Enter colour of circle 1red
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 62, in <module>
+    c1.area()
+TypeError: area() takes 0 positional arguments but 1 was given
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Enter radius of circle 15
+Enter colour of circle 1res
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 62, in <module>
+    c1.area(self.radius)
+NameError: name 'self' is not defined
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Enter radius of circle 15
+Enter colour of circle 1red
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 62, in <module>
+    c1.area(radius)
+NameError: name 'radius' is not defined
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Enter radius of circle 15
+Enter colour of circle 1red
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 62, in <module>
+    c1.area(c1.radius)
+TypeError: area() takes 1 positional argument but 2 were given
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Enter radius of circle 15
+5
+Enter colour of circle 1red
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 63, in <module>
+    c1.area(c1.radius)
+TypeError: area() takes 1 positional argument but 2 were given
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Enter radius of circle 15
+5
+Enter colour of circle 1red
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 64, in <module>
+    c1.area()
+TypeError: area() takes 0 positional arguments but 1 was given
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Enter radius of circle 15
+5
+Enter colour of circle 1red
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 63, in <module>
+    c1.area(c1.radius)
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 55, in area
+    print(pi*radius*radius)
+TypeError: can't multiply sequence by non-int of type 'float'
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Enter radius of circle 15
+5
+Enter colour of circle 1red
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 63, in <module>
+    c1.area(c1.radius)
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 55, in area
+    print(pi*radius*radius)
+TypeError: can't multiply sequence by non-int of type 'float'
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Enter radius of circle 15
+5
+Enter colour of circle 1red
+78.55
+Enter radius of circle 223
+Enter colour of circle 2violet
+Traceback (most recent call last):
+  File "C:/Users/Pranav/Desktop/PYTHON/day7oop.py", line 67, in <module>
+    c2.area()
+TypeError: area() missing 1 required positional argument: 'radius'
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Enter radius of circle 15
+Enter colour of circle 1red
+78.55
+<__main__.circle object at 0x038C8470>
+Enter radius of circle 223
+Enter colour of circle 2violet
+78.55
+>>> 
+============= RESTART: C:/Users/Pranav/Desktop/PYTHON/day7oop.py =============
+Enter radius of circle 15
+Enter colour of circle 1red
+78.55
+<__main__.circle object at 0x03508450>
+Enter radius of circle 232
+Enter colour of circle 2red
+3217.408
+>>> 
